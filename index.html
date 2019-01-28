@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="description" content="Euphoria 2019">
+    <meta name="keywords" content="frcrce, fr, agnel, website, stuco, conceicao, engineering, html, css, javascript, bootstrap, euphoria, cultural, event">
+    <meta name="robots" content="index, follow">
+    <meta name="web_author" content="Student Council CRCE">
+    <meta name="language" content="English">
+    <title>Euphoria 2019</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <!--Font files-->
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+    
+    
+    <style>
+        body{
+            
+            background-color: black;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: repeat-y;
+            
+        }
+        hr{
+            background-color:#fed136 !important;
+            padding: 0rem !important;
+            margin: 0%!important;
+        }
+        .jumbotron{
+            margin: 0%;
+            
+        }
+        p,h2{
+            color: #fed136;
+        }
+    .navbar{
+        padding: 0.8rem;
+        
+    }
+    .navbar-brand {
+        font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial;
+        font-size: 1.9rem;
+        
+    }
+    .navbar-light .navbar-brand{
+        color: #fed136;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #fed136;
+    }
+    #mainNav{
+        background-color: black;
+    }
+    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+        color: white;
+      }
+
+      #mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: white;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: white !important;
+  background-color: black;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: black;
+}
+.navbar-light .navbar-toggler .navbar-toggler-icon {
+    background-color: #fed136;
+    color: black;
+    width: 1.5em;
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background-color: #fed136;
+}
+
+
+
+
+    header.masthead {
+        padding-top: 10rem;
+        padding-bottom: calc(10rem - 56px);
+        background-image: url("./img/cover.jpg");
+        background-position: center center;
+        background-size: cover;
+      }
+      
+      header.masthead h1 {
+        font-size: 2rem;
+        color: #fed136;
+      }
+      
+      header.masthead p {
+        font-weight: 300;
+        color: #fed136;
+      }
+      
+      
+
+      .btn {
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 300px;
+      }
+      .btn-primary {
+        background-color: #fed136;
+        border-color: #fed136;
+        color: black;
+      }
+      
+      .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+        color: black;
+        background-color: white !important;
+      }
+      
+      .btn-primary:active, .btn-primary:focus {
+        -webkit-box-shadow: #fed136 !important;
+        box-shadow:white !important;
+      }
+      .fa-facebook {
+        color: #fed136;
+        font-size: 2em;
+      }
+      .fa-instagram {
+        color: #fed136;
+        font-size: 2em !important;
+      }
+      .fa-youtube {
+        color: #bb0000;
+        font-size: 2em;
+      }
+      .fa-snapchat {
+        color: #fffc00;
+        font-size: 2em;
+      }
+      .social a {
+        font-size: 2.5em;
+        padding: 3rem;
+        
+      }
+      .fa-facebook:hover,
+      .fa-snapchat:hover,
+      .fa-instagram:hover,
+      .fa-youtube:hover {
+        color: #d5d5d5;
+      }
+      footer {
+        padding: 25px 0;
+        text-align: center;
+        background-color: black;
+        color: #fed136;
+        margin-top: 100px;
+        text-transform: uppercase;
+      }
+      footer a{
+          color: #fed136;
+      }
+      footer a:hover{
+          color:#fffc00;
+      }
+      #personality .container-fluid{
+          margin-top: 2rem; 
+      }
+      #sports .container-fluid{
+        margin-top: 2rem; 
+    }
+    #performing .container-fluid{
+        margin-top: 2rem; 
+    }
+    #literary .container-fluid{
+        margin-top: 2rem; 
+    }
+    #fun .container-fluid{
+        margin-top: 2rem; 
+    }
+    #finearts .container-fluid{
+        margin-top: 2rem; 
+    }
+    #gaming .container-fluid{
+        margin-top: 2rem; 
+    } 
+    @media (min-width: 320px) and (max-width: 480px){
+        .navbar-brand{
+            font-size: 1.3rem;
+        }
+        .navbar-toggler{
+            font-size: 1rem;
+        }
+        strong {
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        #personality .container-fluid{
+            margin-top: 2rem; 
+        }
+        #sports .container-fluid{
+          margin-top: 2rem; 
+      }
+      #performing .container-fluid{
+          margin-top: 2rem; 
+      }
+      #literary .container-fluid{
+          margin-top: 2rem; 
+      }
+      #fun .container-fluid{
+          margin-top: 2rem; 
+      }
+      #finearts .container-fluid{
+          margin-top: 2rem; 
+      }
+      #gaming .container-fluid{
+          margin-top: 2rem; 
+      } 
+    }
+      
+      @media (min-width: 481px) and (max-width: 767px) {
+        
+        .navbar-brand {
+          font-size: 1.4rem !important;
+          margin-right: 1.5rem;
+        }
+      }
+      @media (min-width: 768px) {
+        header.masthead p {
+          font-size: 2.15rem;
+        }
+      }
+      
+      @media (min-width: 992px) {
+        #mainNav {
+            border-color: transparent;
+            background-color: transparent;
+          }
+          #mainNav .navbar-brand {
+            color: #fed136;
+          }
+          #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+            color: #fed136;
+          }
+          #mainNav .navbar-nav > li.nav-item > a.nav-link {
+            padding: 0.5rem 1rem;
+          }
+          #mainNav .navbar-nav > li.nav-item > a.nav-link,
+          #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+            color: #fed136;
+          }
+          #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+          #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+            color: white;
+          }
+          #mainNav.navbar-shrink {
+            border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+            background-color: black;
+          }
+          #mainNav.navbar-shrink .navbar-brand {
+            color: #fed136;
+          }
+          #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+            color: white;
+          }
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+            color: #fed136;
+          }
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+            color: white;
+          }
+        }
+        header.masthead {
+          height: 100vh;
+          min-height: 650px;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        header.masthead h1 {
+          font-size: 4rem;
+        }
+      
+      
+      @media (min-width: 1200px) {
+        header.masthead h1 {
+          font-size: 5rem;
+        }
+      }
+      
+    
+    </style>
+<body id="#page-top">
+<!--Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container-fluid">
+        <a class="navbar-brand" id="#logo" href="#page-top"><img src="./img/logo.png" width="60" height="60" style="margin-top: -1;" alt="stucologo"></a>
+            <a class="navbar-brand" href="#page-top">Student's Council</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#personality">Personality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sports">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#performing">Performing Arts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#literary">Literature</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="#finearts">Fine Arts</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="#fun">Fun</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="#gaming">Gaming</a>
+          </li>
+              
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!--Cover-->
+    <header class="masthead text-center  d-flex">
+        <div class="container my-auto">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <h1 class="text-uppercase">
+                <strong>EUPHORIA 2019</strong>
+              </h1>
+              
+            </div>
+            <div class="col-lg-8 mx-auto">
+              <p class="text-faded mb-5">Rendevous Of The Universes</p>
+              
+              
+              <a class="btn btn-primary btn-xl js-scroll-trigger">Click here</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <hr>
+      
+     
+      
+
+      <!--Personality Event-->
+      <section id="personality">
+          <div class="jumbotron jumbotron-fluid" style="height: 500px; background: url(./img/personality.jpg); background-size: cover; opacity: 1" >
+              <div class="container-fluid text-center">
+                  <h2><u><b>PERSONALITY</b></u></h2>
+                  <br>
+                  <p>CRCE Roadies</p>
+                  <p>Mr. and Mrs. CRCE</p>
+                  <p>CRCE's Fittest</p>
+                  <br>
+                  <div class="portfolio-item">
+                  <a class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#portfolioModal1">Click here</a>
+                  </div>  
+              </div>
+          </div>
+          <hr>
+
+      </section>
+      <!--Sports Event-->
+      <section id="sports">
+            <div class="jumbotron jumbotron-fluid" style="height: 500px; background: url(./img/sports.jpg); background-size: cover; opacity: 1" >
+                <div class="container-fluid text-center">
+                    <h2><u><b>SPORTS</b></u></h2>
+                    <br>
+                    <p>Rink Football</p>
+                    <p>Box Cricket</p>
+                    <p>Kho Kho</p>
+                    <br>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
+  
+                </div>
+            </div>
+  
+        </section>
+        <hr>
+      <!--Performing arts Events-->
+      <section id="performing">
+            <div class="jumbotron jumbotron-fluid" style="height: 500px; background: url(./img/performing.jpg); background-size: cover; opacity: 1" >
+                <div class="container-fluid text-center">
+                    <h2><u><b>PERFORMING ARTS</b></u></h2>
+                    <br>
+                    <p>Viral Voice(English)</p>
+                    <p>Viral Voice(Hindi)</p>
+                    <p>Dance face-off</p>
+                    <br>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
+  
+                </div>
+            </div>
+  
+        </section>
+        <hr>
+      <!--Literary Events-->
+      <section id="literary">
+            <div class="jumbotron jumbotron-fluid" style="height: 500px; background: url(./img/literature.jpg); background-size: cover; opacity: 1" >
+                <div class="container-fluid text-center">
+                    <h2><u><b>LITERATURE</b></u></h2>
+                    <br>
+                    <p>Extempore</p>
+                    <p>Just a minute</p>
+                    <p>Fake a news</p>
+                    <p>Poetry Re-engineered</p>
+                    <br>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
+  
+                </div>
+            </div>
+  
+        </section>
+        <hr>
+      <!--Fine Arts Events-->
+      <section id="finearts">
+            <div class="jumbotron jumbotron-fluid" style="height: 500px; background: url(./img/finearts.jpg); background-size: cover; opacity: 1" >
+                <div class="container-fluid text-center">
+                    <h2><u><b>FINE ARTS</b></u></h2>
+                    <br>
+                    <p>Nail Art</p>
+                    <p>Rangoli</p>
+                    <p>Doodle it</p>
+                    
+                    <br>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
+  
+                </div>
+            </div>
+  
+        </section>
+        <hr>
+      <!--Fun Events-->
+      <section id="fun">
+            <div class="jumbotron jumbotron-fluid" style="height: 500px; background: url(./img/fun.jpg); background-size: cover; opacity: 1" >
+                <div class="container-fluid text-center">
+                    <h2><u><b>FUN EVENTS</b></u></h2>
+                    <br>
+                    <p>Taboo</p>
+                    <p>Ad Mad</p>
+                    <p>Scavenger hunt</p>
+                    <p>Face Paint</p>
+                    
+                    <br>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
+  
+                </div>
+            </div>
+  
+        </section>
+        <hr>
+        <!--Gaming Events-->
+        <section id="gaming">
+                <div class="jumbotron jumbotron-fluid" style="height: 500px; background: url(./img/gaming.jpg); background-size: cover; opacity: 1" >
+                    <div class="container-fluid text-center">
+                        <h2><u><b>GAMING EVENTS</b></u></h2>
+                        <br>
+                        <p>LAN Events</p>
+                        <p>PUBG</p>
+                        <p>Aba Dhubi</p>
+                        
+                        
+                        <br>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
+      
+                    </div>
+                </div>
+      
+            </section>
+            <hr>
+
+            <!--Connect-->
+            <div class="container-fluid padding" id="contacts">
+                    <div class="row text-center padding">
+                        <div class="col-12">
+                            <br>
+                            <br>
+                            <br>
+                            <h2>CONNECT</h2>
+                            <hr class="my-3">
+                            <div class="contact-line">
+                                <h3 class="section-subheading" style="color: #fed136">Drop us a mail at <strong>crce.council@gmail.com</strong><br>
+                                    <br><br>Follow us on all platforms!</h3>
+                            </div>
+                            <br>
+                            <div class="col-12 social padding">
+                                <a href="https://www.facebook.com/frcrce.studentscouncil/" target="blank"><i class="fab fa-facebook"></i></a>
+            
+            
+                                <a href="https://www.instagram.com/frcrce_official/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Footer-->
+                <footer>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <span class="copyright">Copyright &copy; Students' Council 2018-2019</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="copyrightmine">Designed and Developed by Sanfer Noronha</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-inline quicklinks">
+                                        <li class="list-inline-item">
+                                            <a href="#page-top">HOME</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+
+<!--Custom Scripts-->
+<script src="js/main.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/main.min.js"></script>
+   
+<script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+
+        
+    </body>
+</html>
+
+
+
+<!--Personality Modal-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="modal-body text-center">
+                            <!-- Project Details Go Here -->
+                            <h1>Hello</h1>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
