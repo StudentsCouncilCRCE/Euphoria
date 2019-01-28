@@ -21,6 +21,8 @@
     <!--Font files-->
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Voltaire" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Capriola" rel="stylesheet">
     
     
     
@@ -32,6 +34,7 @@
             background-attachment: fixed;
             background-size: cover;
             background-repeat: repeat-y;
+            text-shadow: 2px 2px black;
             
         }
         hr{
@@ -45,6 +48,11 @@
         }
         p,h2{
             color: #fed136;
+        }
+        p{
+            font-size: 1.5rem;
+            font-family: 'Capriola', sans-serif;
+            text-shadow: 2.5px 2.5px black;
         }
     .navbar{
         padding: 0.8rem;
@@ -134,6 +142,9 @@
         background-color: #fed136;
         border-color: #fed136;
         color: black;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px black !important;
+        
       }
       
       .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -207,6 +218,15 @@
     #gaming .container-fluid{
         margin-top: 2rem; 
     } 
+    .modal .row{
+        background-color: #fed136;
+    }
+    .modal-body{
+        background-color: black;
+    }
+    .modal h4{
+        color: #fed136;
+    }
     @media (min-width: 320px) and (max-width: 480px){
         .navbar-brand{
             font-size: 1.3rem;
@@ -312,11 +332,12 @@
         header.masthead h1 {
           font-size: 5rem;
         }
+        
       }
       
     
     </style>
-<body id="#page-top">
+<body id="page-top">
 <!--Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container-fluid">
@@ -360,15 +381,15 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <h1 class="text-uppercase">
-                <strong>EUPHORIA 2019</strong>
+                <strong style="font-family:'Voltaire', sans-serif"><b>EUPHORIA 2019</b></strong>
               </h1>
               
             </div>
             <div class="col-lg-8 mx-auto">
-              <p class="text-faded mb-5">Rendevous Of The Universes</p>
+              <p class="text-faded mb-5" style="font-family:'Voltaire', sans-serif; font-size:3rem"><b>Rendezvous Of The Universes</b></p>
               
               
-              <a class="btn btn-primary btn-xl js-scroll-trigger">Click here</a>
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#personality">Click here</a>
               
               </div>
             </div>
@@ -408,8 +429,9 @@
                     <p>Box Cricket</p>
                     <p>Kho Kho</p>
                     <br>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
-  
+                    <div class="portfolio-item">
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#portfolioModal2">Click here</a>
+                    </div>
                 </div>
             </div>
   
@@ -425,8 +447,9 @@
                     <p>Viral Voice(Hindi)</p>
                     <p>Dance face-off</p>
                     <br>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
-  
+                    <div class="portfolio-item">
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#portfolioModal3">Click here</a>
+                    </div>
                 </div>
             </div>
   
@@ -443,8 +466,9 @@
                     <p>Fake a news</p>
                     <p>Poetry Re-engineered</p>
                     <br>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
-  
+                    <div class="portfolio-item">
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#portfolioModal4">Click here</a>
+                    </div>
                 </div>
             </div>
   
@@ -461,8 +485,9 @@
                     <p>Doodle it</p>
                     
                     <br>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
-  
+                    <div class="portfolio-item">
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#portfolioModal5">Click here</a>
+                    </div>
                 </div>
             </div>
   
@@ -480,8 +505,9 @@
                     <p>Face Paint</p>
                     
                     <br>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
-  
+                    <div class="portfolio-item">
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#portfolioModal6">Click here</a>
+                    </div>    
                 </div>
             </div>
   
@@ -499,8 +525,9 @@
                         
                         
                         <br>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Click here</a>
-      
+                        <div class="portfolio-item">
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#portfolioModal7">Click here</a>
+                        </div>    
                     </div>
                 </div>
       
@@ -582,9 +609,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <div class="modal-body text-center">
+                        <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h1>Hello</h1>
+                            <h2 class="text-center">Personality Events</h2>
+                            <ul>
+                                <li><h4><u>CRCE Roadies</u></h4></li>
+                                <p>Get ready to challenge your
+                                    physical and mental strength as CRCE roadies
+                                    returns this euphoria.</p>
+                                <li><h4><u>Mr. and Miss CRCE</u></h4></li>
+                                <p>Missed on Mr. and Mrs.
+                                    Freshers?? Here’s your second chance to be the
+                                    best in the college. Show how talented you are
+                                    and get that title in front of your name.</p>
+                                <li><h4><u>CRCE's Fittest</u></h4></li>
+                                <p>Remember the time when
+                                    your friends thought that you were just
+                                    boasting about your fitness? Time to show
+                                    them how tough you are and become the
+                                    CRCE’s fittest .</p>
+                            </ul>
+
                             <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
                         </div>
                     </div>
@@ -593,8 +638,258 @@
         </div>
     </div>
 </div>
+<!--Sports-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Sports Events</h2>
+                            <ul>
+                                <li><h4><u>Rink Football</u></h4></li>
+                                <p>Every class will have a chance to represent themselves with a team of 5+7 in the Euphoria's Rink.</p>
+                                <li><h4><u>Box Cricket</u></h4></li>
+                                <p>For all the Cricketing Enthusiasts of our college, Student Council brings to you the the tournament
+                                    of Box Cricket in which all the classes will represent itself with their best players in the Game for the
+                                    ultimate Championship. Note that the Ground is Limited and so are the overs.</p>
+                                <li><h4><u>Kho Kho</u></h4></li>
+                                <p>The Girls get an opportunity to go back to their most cherished Childhood Memory of playing Kho
+                                    Kho. The girls will create a team and show forth their Calibre on the Ground to compete for the Trophy</p>
+                            </ul>
 
+                            <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Performing arts-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Performing arts</h2>
+                            <ul>
+                                <li><h4><u>Viral Voice(English) - Solo</u></h4></li>
+                                <p>If participant plays an accompaniment instrument then no additional setup time will be
+                                    provided.
+                                    Participants can have at the most one person for accompaniment. Participants using minus
+                                    tracks have to submit the minus track pre-edited and with the 2.5 mins constraint. Use of
+                                    abusive language will lead to disqualification.
+                                    </p>
+                                <li><h4><u>Viral Voice(English) - Duet</u></h4></li>
+                                <p>Both the participants should be from the same branch/class. If participant plays an
+                                    accompaniment instrument then no additional setup time will be provided. Participants can have
+                                    at the most one person for accompaniment.Participants using minus tracks have to submit the
+                                    minus track pre-edited and with the 2.5 mins constraint. Use of abusive language will lead to
+                                    disqualification.
+                                    </p>
+                                <li><h4><u>Viral Voice(Hindi) - Solo</u></h4></li>
+                                <p>If participant plays an accompaniment instrument then no additional setup time will be
+                                    provided.
+                                    Participants can have at the most one person for accompaniment. Participants using minus
+                                    tracks have to submit the minus track pre-edited and with the 2.5 mins constraint. Use of
+                                    abusive language will lead to disqualification.
+                                </p>
+                                <li><h4><u>Viral Voice(Hindi) - Duet</u></h4></li>
+                                <p>Both the participants should be from the same branch/class. If participant plays an
+                                    accompaniment instrument then no additional setup time will be provided. Participants can have
+                                    at the most one person for accompaniment.Participants using minus tracks have to submit the
+                                    minus track pre-edited and with the 2.5 mins constraint. Use of abusive language will lead to
+                                    disqualification.
+                                </p>
+                                <li><h4><u>Dance face-off:</u></h4></li>
+                                <p>There will be two rounds and the final round will be the dance off. Maximum 6 entries per class will be allowed.
+                                    ROUND 1:
+                                    Prepare a routine. Dancers can apply for this in group/solo. The time limit for each performance/routine prepared is 5 mins. Dancers will be based on the basis of their technique, style and coordination. Top 6 will be selected for the dance-off.
+                                    ROUND 2:
+                                    A night before the event a list of 5-8 songs shall be given to the dancers. The song will be decided by drawing a chit. Dancers will be judged on their style and their sense of creativity.
+                                    
+                                </p>
 
+                            </ul>
+
+                            <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Literature-->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Literary Events</h2>
+                            <ul>
+                                <li><h4><u>Extempore</u></h4></li>
+                                <p>Cooking a speech on the spot.</p>
+                                <li><h4><u>Just a minute</u></h4></li>
+                                <p>Speaking for a minute without errors</p>
+                                <li><h4><u>Fake a news</u></h4></li>
+                                <p>Faking a news based on given headline</p>
+                                <li><h4><u>Poetry re-engineered</u></h4></li>
+                                <p>Recite a poem in the best way possible.</p>
+                            </ul>
+
+                            <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Fine Arts-->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Fine arts</h2>
+                            <ul>
+                                <li><h4><u>Nail Arts</u></h4></li>
+                                <p>All those fashionistas out there, show us your nail art talent.</p>
+                                <li><h4><u>Rangoli</u></h4></li>
+                                <p>So you think you can play with colours? Come show us your talent.</p>
+                                <li><h4><u>Doodle it</u></h4></li>
+                                <p>Draw out your favourite characters from this magnificent union of the universes.</p>
+                                
+                            </ul>
+
+                            <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Fun events-->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Fun Events</h2>
+                            <ul>
+                                <li><h4><u>Taboo</u></h4></li>
+                                <p>Taboo, the laugh out loud, out-of-your-seat game of forbidden words. In the Taboo game, you
+                                    need to get your team to guess the secret word, but the obvious clues are strictly off-limits. To
+                                    get your team to say pinball, would you say arcade, game, flippers, tilt or roll? In this game you
+                                    can't because all of those words are strictly forbidden. Get your team to guess as many words
+                                    as you can while you race against the clock. But watch out; if you say a forbidden word, the
+                                    other team will "squeak" you and you lose the word.</p>
+                                <li><h4><u>Ad Mad</u></h4></li>
+                                <p>Bring out the creativity inside you and make an outstanding advertisement of your own. Be it
+                                    hilarious or sensitive, be it just your creativity and ad sense. Show us your acting and
+                                    convincing skills as you make an advertisement for this bizarre and unusual product given by
+                                    us!</p>
+                                <li><h4><u>Scavenger hunt</u></h4></li>
+                                <p>Awaken Your inner Indiana jones and hunt for the treasure waiting you.</p>
+                                <li><h4><u>Face Paint</u></h4></li>
+                                <p>Put a fellow mate behind a mask while showcasing your painting skills.</p>
+                                
+                            </ul>
+
+                            <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Gaming Events-->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2 class="text-center">Gaming Events</h2>
+                            <ul>
+                                <li><h4><u>LAN Gaming-Counter-Strike</u></h4></li>
+                                <p>All those hours playing video games,did you ever think it will be put to use?
+                                    Switch your gamer mode on and show us who is the best.</p>
+                                <li><h4><u>PUBG</u></h4></li>
+                                <p>How about telling the college who the real champion is??Come and live the hype and show your
+                                    skills.
+                                    </p>
+                                <li><h4><u>Aba Dhubi</u></h4></li>
+                                <p>We've all played this game growing up,bring out the child in you as you play this game once
+                                    more!
+                                    </p>
+                                
+                            </ul>
+
+                            <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
