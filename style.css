@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://use.fontawesome.com/releases/v5.0.8/js/all.js');
+@import url('https://fonts.googleapis.com/css?family=Voltaire');
+@import url('https://fonts.googleapis.com/css?family=Capriola');
+html,
+
+
+  body{
+            
+            background-color: black;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: repeat-y;
+            text-shadow: 2px 2px black;
+            
+        }
+        hr{
+            background-color:#fed136 !important;
+            padding: 0rem !important;
+            margin: 0%!important;
+        }
+        .jumbotron{
+            margin: 0%;
+            
+        }
+        p,h2{
+            color: #fed136;
+        }
+        p{
+            font-size: 1.5rem;
+            font-family: 'Capriola', sans-serif;
+            text-shadow: 2.5px 2.5px black;
+        }
+    .navbar{
+        padding: 0.8rem;
+        
+    }
+    .navbar-brand {
+        font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial;
+        font-size: 1.9rem;
+        
+    }
+    .navbar-light .navbar-brand{
+        color: #fed136;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #fed136;
+    }
+    #mainNav{
+        background-color: black;
+    }
+    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+        color: white;
+      }
+
+      #mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: white;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: white !important;
+  background-color: black;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: black;
+}
+.navbar-light .navbar-toggler .navbar-toggler-icon {
+    background-color: #fed136;
+    color: black;
+    width: 1.5em;
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background-color: #fed136;
+}
+
+
+
+
+    header.masthead {
+        padding-top: 10rem;
+        padding-bottom: calc(10rem - 56px);
+        background-image: url("./img/cover.jpg");
+        background-position: center center;
+        background-size: cover;
+      }
+      
+      header.masthead h1 {
+        font-size: 2rem;
+        color: #fed136;
+      }
+      
+      header.masthead p {
+        font-weight: 300;
+        color: #fed136;
+      }
+      
+      
+
+      .btn {
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 300px;
+      }
+      .btn-primary {
+        background-color: #fed136;
+        border-color: #fed136;
+        color: black;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px black !important;
+        
+      }
+      
+      .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+        color: black;
+        background-color: white !important;
+      }
+      
+      .btn-primary:active, .btn-primary:focus {
+        -webkit-box-shadow: #fed136 !important;
+        box-shadow:white !important;
+      }
+      .fa-facebook {
+        color: #fed136;
+        font-size: 2em;
+      }
+      .fa-instagram {
+        color: #fed136;
+        font-size: 2em !important;
+      }
+      .fa-youtube {
+        color: #bb0000;
+        font-size: 2em;
+      }
+      .fa-snapchat {
+        color: #fffc00;
+        font-size: 2em;
+      }
+      .social a {
+        font-size: 2.5em;
+        padding: 3rem;
+        
+      }
+      .fa-facebook:hover,
+      .fa-snapchat:hover,
+      .fa-instagram:hover,
+      .fa-youtube:hover {
+        color: #d5d5d5;
+      }
+      footer {
+        padding: 25px 0;
+        text-align: center;
+        background-color: black;
+        color: #fed136;
+        margin-top: 100px;
+        text-transform: uppercase;
+      }
+      footer a{
+          color: #fed136;
+      }
+      footer a:hover{
+          color:#fffc00;
+      }
+      #personality .container-fluid{
+          margin-top: 2rem; 
+      }
+      #sports .container-fluid{
+        margin-top: 2rem; 
+    }
+    #performing .container-fluid{
+        margin-top: 2rem; 
+    }
+    #literary .container-fluid{
+        margin-top: 2rem; 
+    }
+    #fun .container-fluid{
+        margin-top: 2rem; 
+    }
+    #finearts .container-fluid{
+        margin-top: 2rem; 
+    }
+    #gaming .container-fluid{
+        margin-top: 2rem; 
+    } 
+    .modal .row{
+        background-color: #fed136;
+    }
+    .modal-body{
+        background-color: black;
+    }
+    .modal h4{
+        color: #fed136;
+        font-size: 1.3rem;
+    }
+    .modal p{
+        font-size: 0.8rem;
+    }
+    .modal .btn-primary{
+        font-size: 1rem;
+    }
+    
+    @media (min-width: 320px) and (max-width: 480px){
+        .navbar-brand{
+            font-size: 1.3rem;
+        }
+        .navbar-toggler{
+            font-size: 1rem;
+        }
+        strong {
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        #personality .container-fluid{
+            margin-top: 2rem; 
+        }
+        #sports .container-fluid{
+          margin-top: 2rem; 
+      }
+      #performing .container-fluid{
+          margin-top: 2rem; 
+      }
+      #literary .container-fluid{
+          margin-top: 2rem; 
+      }
+      #fun .container-fluid{
+          margin-top: 2rem; 
+      }
+      #finearts .container-fluid{
+          margin-top: 2rem; 
+      }
+      #gaming .container-fluid{
+          margin-top: 2rem; 
+      } 
+    }
+      
+      @media (min-width: 481px) and (max-width: 767px) {
+        
+        .navbar-brand {
+          font-size: 1.4rem !important;
+          margin-right: 1.5rem;
+        }
+      }
+      @media (min-width: 768px) {
+        header.masthead p {
+          font-size: 2.15rem;
+        }
+      }
+      
+      @media (min-width: 992px) {
+        #mainNav {
+            border-color: transparent;
+            background-color: transparent;
+          }
+          #mainNav .navbar-brand {
+            color: #fed136;
+          }
+          #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+            color: #fed136;
+          }
+          #mainNav .navbar-nav > li.nav-item > a.nav-link {
+            padding: 0.5rem 1rem;
+          }
+          #mainNav .navbar-nav > li.nav-item > a.nav-link,
+          #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+            color: #fed136;
+          }
+          #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+          #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+            color: white;
+          }
+          #mainNav.navbar-shrink {
+            border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+            background-color: black;
+          }
+          #mainNav.navbar-shrink .navbar-brand {
+            color: #fed136;
+          }
+          #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+            color: white;
+          }
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+            color: #fed136;
+          }
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+            color: white;
+          }
+        }
+        header.masthead {
+          height: 100vh;
+          min-height: 650px;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        header.masthead h1 {
+          font-size: 4rem;
+        }
+      
+      
+      @media (min-width: 1200px) {
+        header.masthead h1 {
+          font-size: 5rem;
+        }
+        
+      }
